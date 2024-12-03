@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: secom_failure_detection
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/SubhanKhurshid/devops-project
+Author: SubhanKhurshid
+Author-email: k213096@nu.edu.pk
+Project-URL: Bug Tracker, https://github.com/SubhanKhurshid/devops-project/issues
+Description-Content-Type: text/markdown
