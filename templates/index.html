@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Predictive Maintenance</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f0f4f8; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+    <div style="background-color: #ffffff; border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); padding: 3rem; width: 90%; max-width: 500px;">
+        <h1 style="color: #1a365d; text-align: center; margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 600; letter-spacing: 0.5px;">AI PREDICTIVE MAINTENANCE PROJECT</h1>
+        
+        <p style="color: #4a5568; text-align: center; margin-bottom: 2rem; font-size: 1rem;">Advanced analytics for equipment reliability</p>
+        
+        <h2 style="color: #2b6cb0; text-align: center; margin-bottom: 2rem; font-size: 1.5rem; font-weight: 500;">Predict Equipment Failure</h2>
+        
+        <form method="POST" action="/predict" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label for="sensor_data" style="font-weight: 500; color: #2d3748; font-size: 0.95rem;">Enter Sensor Data (comma-separated):</label>
+                <input type="text" name="sensor_data" required placeholder="e.g. 0.23, 1.2, 0.5" style="padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem; transition: border-color 0.3s ease; outline: none;">
+            </div>
+            <button type="submit" style="background-color: #4299e1; color: white; border: none; padding: 0.75rem; border-radius: 6px; font-size: 1rem; cursor: pointer; transition: background-color 0.3s ease; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Predict</button>
+        </form>
+
+        <div style="margin-top: 2rem; padding: 1rem; background-color: #ebf8ff; border-radius: 6px; text-align: center;">
+            <h2 style="color: #2b6cb0; margin: 0; font-size: 1.1rem; font-weight: 500;">Prediction Result</h2>
+            <p style="color: #2d3748; margin: 0.5rem 0 0; font-size: 1rem;">{{ prediction_text }}</p>
+        </div>
+    </div>
+</body>
+</html>
+
